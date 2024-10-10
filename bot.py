@@ -3,8 +3,8 @@ import sqlite3
 from telebot import types
 from openai import OpenAI
 
-openai = OpenAI(api_key = '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')  # Укажите ваш ключ API OpenAI здесь
-bot = telebot.TeleBot('6551754676:AAFkuwFk7eO_0uArpjcxOq6JR-8ewU_fXFU')  # Укажите токен вашего бота
+openai = OpenAI(api_token='токен')  # Укажите ваш ключ API OpenAI здесь
+bot = telebot.TeleBot('токен')  #  Укажите токен вашего бота
 
 markup1 = types.InlineKeyboardMarkup(row_width=1)
 item1_1 = types.InlineKeyboardButton(text='Начать', callback_data='start_')
